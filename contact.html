@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Travel Website - Contact</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="destinations.html">Destinations</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="half-width">
+        <img class="dist_image" src="contact.png" alt="contact" />
+      </div>
+
+      <div class="half-width">
+        <div class="contact-form">
+          <h2>Contact Us</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /><br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br /><br />
+            <label for="message">Message:</label><br />
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              required
+            ></textarea
+            ><br /><br />
+            <button type="button" onclick="displayMessage()">Submit</button>
+          </form>
+          <p id="displayArea"></p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="half-width">
+        <h1>Address</h1>
+        <h4>Adventures Travel Agency</h4>
+        <ul>
+          <li>adventure.travel@gmail.com</li>
+          <li>+88 01749782201</li>
+          <li>Bashundhara R/A, Dhaka</li>
+        </ul>
+      </div>
+      <div class="half-width">
+        <img class="dist_image" src="location.png" alt="Location" />
+      </div>
+    </div>
+    <!-- Customer Reviews -->
+    <h1>Customer Reviews</h1>
+    <div class="review-container">
+      <figure>
+        <img class="customer-image" src="customer1.jpg" alt="Customer 1" />
+        <figcaption>
+          <blockquote>
+            "I had an incredible experience with Adventures Travel Agency. They
+            made my vacation truly memorable!"
+          </blockquote>
+          <cite>- Emma Smith</cite>
+        </figcaption>
+      </figure>
+      <figure>
+        <img class="customer-image" src="customer2.jpg" alt="Customer 2" />
+        <figcaption>
+          <blockquote>
+            "The team at Adventures Travel Agency is highly professional and
+            efficient. I would recommend them to anyone looking for a seamless
+            travel experience."
+          </blockquote>
+          <cite>- John Doe</cite>
+        </figcaption>
+      </figure>
+      <figure>
+        <img class="customer-image" src="customer3.jpg" alt="Customer 3" />
+        <figcaption>
+          <blockquote>
+            "I am impressed by the personalized services provided by Adventures
+            Travel Agency. They went above and beyond to ensure my trip was
+            perfect!"
+          </blockquote>
+          <cite>- Sarah Johnson</cite>
+        </figcaption>
+      </figure>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
